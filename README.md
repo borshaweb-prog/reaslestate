@@ -1,19 +1,20 @@
-# Borsha Gadgets — Property Discovery
+# Borsha Gadgets
 
-Premium static real-estate/property discovery website using the Borsha Gadgets brand.
+Premium React property platform for Cloudflare deployment.
 
-## Included
-- Responsive premium property storefront
-- Property collection and Borsha Signal™ scoring concept
-- Separate property admin control room
-- No database/backend dependency
-- Cloudflare Pages compatible
+## Stack
+- React + JSX
+- Vite
+- JavaScript
+- React Router
+- Lucide icons
+- Component-based frontend/admin architecture
 
-## Deploy
-Deploy the repository root to Cloudflare Pages. No build command is required.
+## Build
+npm install
+npm run build
 
-## Security
-Browser-delivered code can always be inspected; frontend code cannot be made completely invisible. Never put secrets in frontend files. For real authentication, listings, inquiries and customer data, add Cloudflare Workers + D1/KV/R2 and server-side authentication.
+The source UI is React-based. The root index.html is only the minimal Vite document entry; no application UI is hard-coded there.
 
-## Demo data
-Listings and admin metrics are presentation data because this version intentionally has no database.
+## Production backend
+The current no-database demo persists browser edits in localStorage. For real shared admin data and authentication, connect Cloudflare Workers + D1.
