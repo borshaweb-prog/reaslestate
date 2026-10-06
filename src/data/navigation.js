@@ -1,0 +1,1 @@
+export const adminNavigation=[{key:"overview",label:"Overview",icon:"dashboard"},{key:"properties",label:"Properties",icon:"home"},{key:"inquiries",label:"Inquiries",icon:"inbox"},{key:"agents",label:"Agents",icon:"users"},{key:"analytics",label:"Analytics",icon:"chart"},{key:"media",label:"Media library",icon:"image"},{key:"settings",label:"Settings",icon:"settings"}];
