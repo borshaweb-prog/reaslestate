@@ -35,7 +35,7 @@ export default function PropertyDetailPage(){
     const record={...booking,id:"BK-"+Date.now(),propertyId:p.id,property:p.title,propertySlug:p.slug,createdAt:new Date().toISOString()};
     setBookings(x=>[record,...x]);
     const message=[
-      "BORSHА HOME — PROPERTY BOOKING",
+      "BORSHA HOME — PROPERTY BOOKING",
       "",
       "Property: "+p.title,
       "Property ID: "+p.id,
