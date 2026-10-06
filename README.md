@@ -1,19 +1,19 @@
-# Borsha Gadgets
+# Borsha Gadgets — Property Discovery
 
-Premium, Cloudflare-friendly static gadget storefront with a separate admin control room.
+Premium static real-estate/property discovery website using the Borsha Gadgets brand.
 
 ## Included
-- Responsive storefront
-- Borsha Signal™ merchandising concept
-- Separate admin control room
-- No database dependency
-- Static HTML/CSS/JS-free deployment path
+- Responsive premium property storefront
+- Property collection and Borsha Signal™ scoring concept
+- Separate property admin control room
+- No database/backend dependency
 - Cloudflare Pages compatible
 
 ## Deploy
-Upload this repository to Cloudflare Pages as a static site. Set the output directory to the repository root.
+Deploy the repository root to Cloudflare Pages. No build command is required.
 
-## Important
-Because this version intentionally has no database/backend, admin data is presentation-only. For production authentication, orders, inventory persistence and protected business logic, connect the UI to Cloudflare Workers + D1/KV/R2.
+## Security
+Browser-delivered code can always be inspected; frontend code cannot be made completely invisible. Never put secrets in frontend files. For real authentication, listings, inquiries and customer data, add Cloudflare Workers + D1/KV/R2 and server-side authentication.
 
-Browser-delivered code can never be made completely invisible; production secrets must stay server-side.
+## Demo data
+Listings and admin metrics are presentation data because this version intentionally has no database.
