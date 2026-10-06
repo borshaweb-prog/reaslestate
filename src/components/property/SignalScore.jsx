@@ -1,0 +1,1 @@
+import React from"react";export default function SignalScore({score,details=false}){return <div className="signal-score"><div><span>BORSHA SIGNAL™</span><b>{Number(score).toFixed(1)}</b></div>{details&&<div className="score-track"><i style={{width:Math.min(100,Math.max(0,Number(score)))+"%"}}/></div>}</div>}
